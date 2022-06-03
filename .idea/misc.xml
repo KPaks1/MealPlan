@@ -14,7 +14,8 @@
         <entry key="..\:/repo/MealPlan/app/src/main/res/layout/fragment_meal.xml" value="0.1" />
         <entry key="..\:/repo/MealPlan/app/src/main/res/layout/fragment_saved_meals.xml" value="0.1" />
         <entry key="..\:/repo/MealPlan/app/src/main/res/layout/fragment_search_meals.xml" value="0.1" />
-        <entry key="..\:/repo/MealPlan/app/src/main/res/layout/item_meal_preview.xml" value="0.1" />
+        <entry key="..\:/repo/MealPlan/app/src/main/res/layout/item_ingredient_preview.xml" value="0.33" />
+        <entry key="..\:/repo/MealPlan/app/src/main/res/layout/item_meal_preview.xml" value="0.5" />
         <entry key="..\:/repo/MealPlan/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.33" />
       </map>
     </option>

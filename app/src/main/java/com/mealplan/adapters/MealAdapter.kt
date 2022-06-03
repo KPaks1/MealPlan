@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.mealplan.R
 import com.mealplan.data.entitities.models.Meal
 import kotlinx.android.synthetic.main.item_meal_preview.view.*
@@ -40,7 +41,7 @@ class MealAdapter : RecyclerView.Adapter<MealAdapter.MealViewHolder>() {
     override fun onBindViewHolder(holder: MealViewHolder, position: Int) {
         val meal = differ.currentList[position]
         holder.itemView.apply{
-            //Glide.with(this).load(meal.mealImage).into(ivMealImage)
+//            Glide.with(this).load(meal.mealImage).into(ivMealImage)
             tvTitle.text = meal.mealName
             tvDescription.text = meal.mealDescription
             setOnClickListener{

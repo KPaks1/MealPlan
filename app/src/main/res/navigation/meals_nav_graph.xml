@@ -7,14 +7,23 @@
     <fragment
         android:id="@+id/mealFragment"
         android:name="com.mealplan.ui.fragments.MealFragment"
-        android:label="MealFragment" />
+        android:label="MealFragment" >
+        <argument
+            android:name="meal"
+            app:argType="com.mealplan.data.entitities.models.Meal" />
+    </fragment>
     <fragment
         android:id="@+id/allMealsFragment"
         android:name="com.mealplan.ui.fragments.AllMealsFragment"
         android:label="AllMealsFragment" >
         <action
             android:id="@+id/action_allMealsFragment_to_mealFragment"
-            app:destination="@id/mealFragment" />
+            app:destination="@id/mealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/savedMealsFragment"
@@ -22,7 +31,11 @@
         android:label="SavedMealsFragment" >
         <action
             android:id="@+id/action_savedMealsFragment_to_mealFragment"
-            app:destination="@id/mealFragment" />
+            app:destination="@id/mealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_right"/>
     </fragment>
     <fragment
         android:id="@+id/searchMealsFragment"
@@ -30,6 +43,10 @@
         android:label="SearchMealsFragment" >
         <action
             android:id="@+id/action_searchMealsFragment_to_mealFragment"
-            app:destination="@id/mealFragment" />
+            app:destination="@id/mealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_right"/>
     </fragment>
 </navigation>
